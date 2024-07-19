@@ -1,0 +1,84 @@
+body{
+  margin:0;
+  font-family: "Roboto", sans-serif;
+}
+
+main{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+button{
+  all: unset;
+}
+
+.sidebar{
+ background-color: #171717;
+ height: 100%;
+ width: 260px;
+ padding: 12px;
+ display: flex;
+ flex-direction: column;
+ 
+}
+
+.content{
+ background-color: #222222;
+ height: 100%;
+ flex: 1;
+}
+
+.icons-row{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.icon-btn{
+  color: #b4b4b4;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.icon-btn:hover{
+  background-color: #222222;
+}
+
+.chatgpt-btn{
+  border-radius: 8px;
+  display: flex;
+  height: 40px;
+  gap: 8px;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.chatgpt-btn:hover{
+  background-color: #222222;
+}
+
+.chatgpt-icon{
+  border: 1px solid #ececec;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.chatgpt-icon svg{
+  color: white;
+  height: 66%;
+  width: 66%;
+}
+
+.chatgpt-btn span{
+  color: #ececec;
+}
