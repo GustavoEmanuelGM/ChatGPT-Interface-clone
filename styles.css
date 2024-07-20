@@ -9,15 +9,27 @@ main{
   display: flex;
 }
 
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 button{
   all: unset;
+  cursor: pointer;
+}
+
+span{
+  color: #ececec;
+  font-size: 14px;
 }
 
 .sidebar{
  background-color: #171717;
  height: 100%;
  width: 260px;
- padding: 12px;
+ padding: 0 12px 12px 12px;
  display: flex;
  flex-direction: column;
  
@@ -30,9 +42,11 @@ button{
 }
 
 .icons-row{
+  height: 56px;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
 }
 
@@ -64,7 +78,8 @@ button{
 }
 
 .chatgpt-icon{
-  border: 1px solid #ececec;
+  background-color: #212121;
+  border: 1px solid rgba(255,255,255,0.5);
   height: 24px;
   width: 24px;
   display: flex;
@@ -74,11 +89,72 @@ button{
 }
 
 .chatgpt-icon svg{
-  color: white;
+  color: #b4b4b4;
   height: 66%;
   width: 66%;
 }
 
-.chatgpt-btn span{
-  color: #ececec;
+
+.explore-btn{
+  border-radius: 8px;
+  display: flex;
+  height: 40px;
+  gap: 8px;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.explore-btn:hover{
+  background-color: #222222;
+}
+
+.explore-icon{
+  color: #b4b4b4;
+  height: 26px;
+  width: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.explore-icon svg{
+  height: 18px;
+  width: 18px;
+}
+
+.list-date{
+  color: #b4b4b4;
+  font-size: 12px;
+  padding-left: 8px;
+}
+
+.chat-item{
+  cursor: pointer;
+  position: relative;
+  border-radius: 8px;
+  display: flex;
+  height: 36px;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.chat-item:hover{
+  background-color: #222222;
+}
+
+.chats-container{
+  margin-top: 24px;
+}
+
+.chat-options-btn {
+  position: absolute;
+  color: white;
+  right: 8px;
+  display: none;
+  align-items: center;
+
+}
+
+.chat-item:hover .chat-options-btn{
+  display: flex;
 }
