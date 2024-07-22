@@ -27,7 +27,6 @@ span{
 
 .sidebar{
  background-color: #171717;
- height: 100%;
  width: 260px;
  padding: 0 12px 12px 12px;
  display: flex;
@@ -125,7 +124,7 @@ span{
 .list-date{
   color: #b4b4b4;
   font-size: 12px;
-  padding-left: 8px;
+  padding: 12px 8px 8px;
 }
 
 .chat-item{
@@ -143,6 +142,8 @@ span{
 }
 
 .chats-container{
+  display: flex;
+  flex-direction: column;
   margin-top: 24px;
 }
 
@@ -157,4 +158,29 @@ span{
 
 .chat-item:hover .chat-options-btn{
   display: flex;
+}
+
+.upgrade-btn{
+  height: 56px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 8px;
+}
+
+.chats-box{
+  flex: 1;
+}
+
+.upg-text{
+  display: flex;
+  flex-direction: column;
+}
+.upg-gpt{
+  color: #b9b9b9;
+}
+
+.upgrade-btn:hover{
+  background-color: #222222;
 }
