@@ -33,6 +33,11 @@ span{
   flex-direction: column;
 }
 
+.sidebar span{
+  white-space: nowrap;
+}
+
+
 .content{
   background-color: #222222;
   height: 100%;
@@ -83,6 +88,7 @@ span{
   border: 1px solid rgba(255,255,255,0.5);
   height: 24px;
   width: 24px;
+  min-width: 24px;
   display: flex;
   border-radius: 100%;
   justify-content: center;
